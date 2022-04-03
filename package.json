@@ -1,0 +1,34 @@
+{
+  "name": "span-context-reduced",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./src/**; prettier --check .",
+    "lint:fix": "prettier --write .",
+    "start": "node ./src/index.mjs",
+    "start:dev": "TRACE_DEBUG=yes nodemon ./src/index.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "nodemon": "2.0.15",
+    "prettier": "2.6.1"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "1.6.0",
+    "@opentelemetry/api": "1.0.4",
+    "@opentelemetry/auto-instrumentations-node": "0.28.0",
+    "@opentelemetry/exporter-trace-otlp-http": "0.27.0",
+    "@opentelemetry/instrumentation-fastify": "^0.26.0",
+    "@opentelemetry/instrumentation-http": "^0.27.0",
+    "@opentelemetry/resources": "1.0.1",
+    "@opentelemetry/sdk-node": "0.27.0",
+    "@opentelemetry/sdk-trace-base": "1.0.1",
+    "@opentelemetry/semantic-conventions": "1.0.1",
+    "fastify": "3.27.4"
+  }
+}
