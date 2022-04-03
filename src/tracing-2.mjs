@@ -26,4 +26,3 @@ provider.addSpanProcessor(new SimpleSpanProcessor(new ConsoleSpanExporter()));
 provider.register({
   propagator: new W3CTraceContextPropagator2(),
 });
-export const tracer = opentelemetry.trace.getTracer('example-basic-tracer-node');
